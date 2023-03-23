@@ -1,0 +1,14 @@
+<p-card>
+  <h1>Entre com suas credenciais</h1>
+  <form (ngSubmit)="login()" [formGroup]="loginForm">
+  <p-inputText
+      type="text"
+      formControlName="email"
+      placeholder="E-mail"
+    ></p-inputText>
+    <p-password formControlName="password" placeholder="Senha"></p-password>
+    <p-footer>
+      <button pButton type="submit" label="Entrar"></button>
+    </p-footer>
+  </form>
+</p-card>
